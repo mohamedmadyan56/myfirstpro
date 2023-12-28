@@ -1,0 +1,172 @@
+* 
+* ==> Audit <==
+* |---------|-------------------|----------|------------------------|---------|---------------------|---------------------|
+| Command |       Args        | Profile  |          User          | Version |     Start Time      |      End Time       |
+|---------|-------------------|----------|------------------------|---------|---------------------|---------------------|
+| start   |                   | minikube | DESKTOP-K02BDV6\MADYAN | v1.32.0 | 24 Dec 23 20:31 EET |                     |
+| start   |                   | minikube | DESKTOP-K02BDV6\MADYAN | v1.32.0 | 24 Dec 23 23:08 EET | 24 Dec 23 23:26 EET |
+| start   |                   | minikube | DESKTOP-K02BDV6\MADYAN | v1.32.0 | 25 Dec 23 00:23 EET | 25 Dec 23 00:24 EET |
+| start   |                   | minikube | DESKTOP-K02BDV6\MADYAN | v1.32.0 | 25 Dec 23 00:28 EET |                     |
+| start   |                   | minikube | DESKTOP-K02BDV6\MADYAN | v1.32.0 | 25 Dec 23 23:21 EET |                     |
+| start   |                   | minikube | DESKTOP-K02BDV6\MADYAN | v1.32.0 | 26 Dec 23 14:43 EET |                     |
+| start   |                   | minikube | DESKTOP-K02BDV6\MADYAN | v1.32.0 | 26 Dec 23 18:07 EET | 26 Dec 23 18:09 EET |
+| start   |                   | minikube | DESKTOP-K02BDV6\MADYAN | v1.32.0 | 27 Dec 23 12:21 EET |                     |
+| start   |                   | minikube | DESKTOP-K02BDV6\MADYAN | v1.32.0 | 27 Dec 23 12:24 EET | 27 Dec 23 12:25 EET |
+| service | node-port-service | minikube | DESKTOP-K02BDV6\MADYAN | v1.32.0 | 27 Dec 23 13:53 EET |                     |
+| service | node-port-service | minikube | DESKTOP-K02BDV6\MADYAN | v1.32.0 | 27 Dec 23 13:55 EET |                     |
+| start   |                   | minikube | DESKTOP-K02BDV6\MADYAN | v1.32.0 | 27 Dec 23 13:55 EET |                     |
+| service | node-port-service | minikube | DESKTOP-K02BDV6\MADYAN | v1.32.0 | 27 Dec 23 13:55 EET |                     |
+| start   |                   | minikube | DESKTOP-K02BDV6\MADYAN | v1.32.0 | 27 Dec 23 13:56 EET |                     |
+| service | node-port-service | minikube | DESKTOP-K02BDV6\MADYAN | v1.32.0 | 27 Dec 23 13:57 EET |                     |
+| start   |                   | minikube | DESKTOP-K02BDV6\MADYAN | v1.32.0 | 27 Dec 23 13:58 EET |                     |
+|---------|-------------------|----------|------------------------|---------|---------------------|---------------------|
+
+* 
+* ==> Last Start <==
+* Log file created at: 2023/12/27 13:58:55
+Running on machine: DESKTOP-K02BDV6
+Binary: Built with gc go1.21.3 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I1227 13:58:55.247786   14900 out.go:296] Setting OutFile to fd 84 ...
+I1227 13:58:55.247786   14900 out.go:343] TERM=,COLORTERM=, which probably does not support color
+I1227 13:58:55.247786   14900 out.go:309] Setting ErrFile to fd 88...
+I1227 13:58:55.247786   14900 out.go:343] TERM=,COLORTERM=, which probably does not support color
+W1227 13:58:55.264327   14900 root.go:314] Error reading config file at C:\Users\MADYAN\.minikube\config\config.json: open C:\Users\MADYAN\.minikube\config\config.json: The system cannot find the file specified.
+I1227 13:58:55.289127   14900 out.go:303] Setting JSON to false
+I1227 13:58:55.294128   14900 start.go:128] hostinfo: {"hostname":"DESKTOP-K02BDV6","uptime":6178,"bootTime":1703672157,"procs":298,"os":"windows","platform":"Microsoft Windows 10 Home","platformFamily":"Standalone Workstation","platformVersion":"10.0.19045.3803 Build 19045.3803","kernelVersion":"10.0.19045.3803 Build 19045.3803","kernelArch":"x86_64","virtualizationSystem":"","virtualizationRole":"","hostId":"301c1120-53e0-4556-b2e0-bfc269ba0ecc"}
+W1227 13:58:55.294128   14900 start.go:136] gopshost.Virtualization returned error: not implemented yet
+I1227 13:58:55.301453   14900 out.go:177] * minikube v1.32.0 on Microsoft Windows 10 Home 10.0.19045.3803 Build 19045.3803
+I1227 13:58:55.304249   14900 notify.go:220] Checking for updates...
+I1227 13:58:55.305309   14900 config.go:182] Loaded profile config "minikube": Driver=docker, ContainerRuntime=docker, KubernetesVersion=v1.28.3
+I1227 13:58:55.305823   14900 driver.go:378] Setting default libvirt URI to qemu:///system
+I1227 13:58:57.121761   14900 docker.go:122] docker version: linux-24.0.6:Docker Desktop 4.24.2 (124339)
+I1227 13:58:57.131312   14900 cli_runner.go:164] Run: docker system info --format "{{json .}}"
+I1227 13:59:05.232922   14900 cli_runner.go:217] Completed: docker system info --format "{{json .}}": (8.1014265s)
+I1227 13:59:05.247425   14900 info.go:266] docker info: {ID:dd92cc01-5a43-487c-ab26-572b45b4635f Containers:54 ContainersRunning:32 ContainersPaused:0 ContainersStopped:22 Images:15 Driver:overlay2 DriverStatus:[[Backing Filesystem extfs] [Supports d_type true] [Using metacopy false] [Native Overlay Diff true] [userxattr false]] SystemStatus:<nil> Plugins:{Volume:[local] Network:[bridge host ipvlan macvlan null overlay] Authorization:<nil> Log:[awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog]} MemoryLimit:true SwapLimit:true KernelMemory:false KernelMemoryTCP:true CPUCfsPeriod:true CPUCfsQuota:true CPUShares:true CPUSet:true PidsLimit:true IPv4Forwarding:true BridgeNfIptables:true BridgeNfIP6Tables:true Debug:false NFd:171 OomKillDisable:true NGoroutines:166 SystemTime:2023-12-27 11:59:05.183286 +0000 UTC LoggingDriver:json-file CgroupDriver:cgroupfs NEventsListener:12 KernelVersion:5.10.16.3-microsoft-standard-WSL2 OperatingSystem:Docker Desktop OSType:linux Architecture:x86_64 IndexServerAddress:https://index.docker.io/v1/ RegistryConfig:{AllowNondistributableArtifactsCIDRs:[] AllowNondistributableArtifactsHostnames:[] InsecureRegistryCIDRs:[127.0.0.0/8] IndexConfigs:{DockerIo:{Name:docker.io Mirrors:[] Secure:true Official:true}} Mirrors:[]} NCPU:8 MemTotal:6518464512 GenericResources:<nil> DockerRootDir:/var/lib/docker HTTPProxy:http.docker.internal:3128 HTTPSProxy:http.docker.internal:3128 NoProxy:hubproxy.docker.internal Name:docker-desktop Labels:[] ExperimentalBuild:false ServerVersion:24.0.6 ClusterStore: ClusterAdvertise: Runtimes:{Runc:{Path:runc}} DefaultRuntime:runc Swarm:{NodeID: NodeAddr: LocalNodeState:inactive ControlAvailable:false Error: RemoteManagers:<nil>} LiveRestoreEnabled:false Isolation: InitBinary:docker-init ContainerdCommit:{ID:8165feabfdfe38c65b599c4993d227328c231fca Expected:8165feabfdfe38c65b599c4993d227328c231fca} RuncCommit:{ID:v1.1.8-0-g82f18fe Expected:v1.1.8-0-g82f18fe} InitCommit:{ID:de40ad0 Expected:de40ad0} SecurityOptions:[name=seccomp,profile=unconfined] ProductLicense: Warnings:[WARNING: No blkio throttle.read_bps_device support WARNING: No blkio throttle.write_bps_device support WARNING: No blkio throttle.read_iops_device support WARNING: No blkio throttle.write_iops_device support WARNING: daemon is not using the default seccomp profile] ServerErrors:[] ClientInfo:{Debug:false Plugins:[map[Name:buildx Path:C:\Program Files\Docker\cli-plugins\docker-buildx.exe SchemaVersion:0.1.0 ShortDescription:Docker Buildx Vendor:Docker Inc. Version:v0.11.2-desktop.5] map[Name:compose Path:C:\Program Files\Docker\cli-plugins\docker-compose.exe SchemaVersion:0.1.0 ShortDescription:Docker Compose Vendor:Docker Inc. Version:v2.22.0-desktop.2] map[Name:dev Path:C:\Program Files\Docker\cli-plugins\docker-dev.exe SchemaVersion:0.1.0 ShortDescription:Docker Dev Environments Vendor:Docker Inc. Version:v0.1.0] map[Name:extension Path:C:\Program Files\Docker\cli-plugins\docker-extension.exe SchemaVersion:0.1.0 ShortDescription:Manages Docker extensions Vendor:Docker Inc. Version:v0.2.20] map[Name:init Path:C:\Program Files\Docker\cli-plugins\docker-init.exe SchemaVersion:0.1.0 ShortDescription:Creates Docker-related starter files for your project Vendor:Docker Inc. Version:v0.1.0-beta.8] map[Name:sbom Path:C:\Program Files\Docker\cli-plugins\docker-sbom.exe SchemaVersion:0.1.0 ShortDescription:View the packaged-based Software Bill Of Materials (SBOM) for an image URL:https://github.com/docker/sbom-cli-plugin Vendor:Anchore Inc. Version:0.6.0] map[Name:scan Path:C:\Program Files\Docker\cli-plugins\docker-scan.exe SchemaVersion:0.1.0 ShortDescription:Docker Scan Vendor:Docker Inc. Version:v0.26.0] map[Name:scout Path:C:\Program Files\Docker\cli-plugins\docker-scout.exe SchemaVersion:0.1.0 ShortDescription:Docker Scout Vendor:Docker Inc. Version:v1.0.7]] Warnings:<nil>}}
+I1227 13:59:05.253972   14900 out.go:177] * Using the docker driver based on existing profile
+I1227 13:59:05.257180   14900 start.go:298] selected driver: docker
+I1227 13:59:05.257180   14900 start.go:902] validating driver "docker" against &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO: KicBaseImage:docker.io/kicbase/stable:v0.0.42@sha256:d35ac07dfda971cabee05e0deca8aeac772f885a5348e1a0c0b0a36db20fcfc0 Memory:2200 CPUs:2 DiskSize:20000 VMDriver: Driver:docker HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.28.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:192.168.49.2 Port:8443 KubernetesVersion:v1.28.3 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[default-storageclass:true storage-provisioner:true] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\MADYAN:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 AutoPauseInterval:1m0s GPUs:}
+I1227 13:59:05.258883   14900 start.go:913] status for docker: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I1227 13:59:05.281409   14900 cli_runner.go:164] Run: docker system info --format "{{json .}}"
+I1227 13:59:10.529802   14900 cli_runner.go:217] Completed: docker system info --format "{{json .}}": (5.2483938s)
+I1227 13:59:10.530331   14900 info.go:266] docker info: {ID:dd92cc01-5a43-487c-ab26-572b45b4635f Containers:54 ContainersRunning:32 ContainersPaused:0 ContainersStopped:22 Images:15 Driver:overlay2 DriverStatus:[[Backing Filesystem extfs] [Supports d_type true] [Using metacopy false] [Native Overlay Diff true] [userxattr false]] SystemStatus:<nil> Plugins:{Volume:[local] Network:[bridge host ipvlan macvlan null overlay] Authorization:<nil> Log:[awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog]} MemoryLimit:true SwapLimit:true KernelMemory:false KernelMemoryTCP:true CPUCfsPeriod:true CPUCfsQuota:true CPUShares:true CPUSet:true PidsLimit:true IPv4Forwarding:true BridgeNfIptables:true BridgeNfIP6Tables:true Debug:false NFd:171 OomKillDisable:true NGoroutines:166 SystemTime:2023-12-27 11:59:10.4683618 +0000 UTC LoggingDriver:json-file CgroupDriver:cgroupfs NEventsListener:12 KernelVersion:5.10.16.3-microsoft-standard-WSL2 OperatingSystem:Docker Desktop OSType:linux Architecture:x86_64 IndexServerAddress:https://index.docker.io/v1/ RegistryConfig:{AllowNondistributableArtifactsCIDRs:[] AllowNondistributableArtifactsHostnames:[] InsecureRegistryCIDRs:[127.0.0.0/8] IndexConfigs:{DockerIo:{Name:docker.io Mirrors:[] Secure:true Official:true}} Mirrors:[]} NCPU:8 MemTotal:6518464512 GenericResources:<nil> DockerRootDir:/var/lib/docker HTTPProxy:http.docker.internal:3128 HTTPSProxy:http.docker.internal:3128 NoProxy:hubproxy.docker.internal Name:docker-desktop Labels:[] ExperimentalBuild:false ServerVersion:24.0.6 ClusterStore: ClusterAdvertise: Runtimes:{Runc:{Path:runc}} DefaultRuntime:runc Swarm:{NodeID: NodeAddr: LocalNodeState:inactive ControlAvailable:false Error: RemoteManagers:<nil>} LiveRestoreEnabled:false Isolation: InitBinary:docker-init ContainerdCommit:{ID:8165feabfdfe38c65b599c4993d227328c231fca Expected:8165feabfdfe38c65b599c4993d227328c231fca} RuncCommit:{ID:v1.1.8-0-g82f18fe Expected:v1.1.8-0-g82f18fe} InitCommit:{ID:de40ad0 Expected:de40ad0} SecurityOptions:[name=seccomp,profile=unconfined] ProductLicense: Warnings:[WARNING: No blkio throttle.read_bps_device support WARNING: No blkio throttle.write_bps_device support WARNING: No blkio throttle.read_iops_device support WARNING: No blkio throttle.write_iops_device support WARNING: daemon is not using the default seccomp profile] ServerErrors:[] ClientInfo:{Debug:false Plugins:[map[Name:buildx Path:C:\Program Files\Docker\cli-plugins\docker-buildx.exe SchemaVersion:0.1.0 ShortDescription:Docker Buildx Vendor:Docker Inc. Version:v0.11.2-desktop.5] map[Name:compose Path:C:\Program Files\Docker\cli-plugins\docker-compose.exe SchemaVersion:0.1.0 ShortDescription:Docker Compose Vendor:Docker Inc. Version:v2.22.0-desktop.2] map[Name:dev Path:C:\Program Files\Docker\cli-plugins\docker-dev.exe SchemaVersion:0.1.0 ShortDescription:Docker Dev Environments Vendor:Docker Inc. Version:v0.1.0] map[Name:extension Path:C:\Program Files\Docker\cli-plugins\docker-extension.exe SchemaVersion:0.1.0 ShortDescription:Manages Docker extensions Vendor:Docker Inc. Version:v0.2.20] map[Name:init Path:C:\Program Files\Docker\cli-plugins\docker-init.exe SchemaVersion:0.1.0 ShortDescription:Creates Docker-related starter files for your project Vendor:Docker Inc. Version:v0.1.0-beta.8] map[Name:sbom Path:C:\Program Files\Docker\cli-plugins\docker-sbom.exe SchemaVersion:0.1.0 ShortDescription:View the packaged-based Software Bill Of Materials (SBOM) for an image URL:https://github.com/docker/sbom-cli-plugin Vendor:Anchore Inc. Version:0.6.0] map[Name:scan Path:C:\Program Files\Docker\cli-plugins\docker-scan.exe SchemaVersion:0.1.0 ShortDescription:Docker Scan Vendor:Docker Inc. Version:v0.26.0] map[Name:scout Path:C:\Program Files\Docker\cli-plugins\docker-scout.exe SchemaVersion:0.1.0 ShortDescription:Docker Scout Vendor:Docker Inc. Version:v1.0.7]] Warnings:<nil>}}
+I1227 13:59:10.786889   14900 cni.go:84] Creating CNI manager for ""
+I1227 13:59:10.788468   14900 cni.go:158] "docker" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I1227 13:59:10.789524   14900 start_flags.go:323] config:
+{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO: KicBaseImage:docker.io/kicbase/stable:v0.0.42@sha256:d35ac07dfda971cabee05e0deca8aeac772f885a5348e1a0c0b0a36db20fcfc0 Memory:2200 CPUs:2 DiskSize:20000 VMDriver: Driver:docker HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.28.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:192.168.49.2 Port:8443 KubernetesVersion:v1.28.3 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[default-storageclass:true storage-provisioner:true] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\MADYAN:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 AutoPauseInterval:1m0s GPUs:}
+I1227 13:59:10.797045   14900 out.go:177] * Starting control plane node minikube in cluster minikube
+I1227 13:59:10.800033   14900 cache.go:121] Beginning downloading kic base image for docker with docker
+I1227 13:59:10.802033   14900 out.go:177] * Pulling base image ...
+I1227 13:59:10.806030   14900 image.go:79] Checking for docker.io/kicbase/stable:v0.0.42@sha256:d35ac07dfda971cabee05e0deca8aeac772f885a5348e1a0c0b0a36db20fcfc0 in local docker daemon
+I1227 13:59:10.806030   14900 preload.go:132] Checking if preload exists for k8s version v1.28.3 and runtime docker
+I1227 13:59:10.807032   14900 preload.go:148] Found local preload: C:\Users\MADYAN\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.28.3-docker-overlay2-amd64.tar.lz4
+I1227 13:59:10.808032   14900 cache.go:56] Caching tarball of preloaded images
+I1227 13:59:10.812034   14900 preload.go:174] Found C:\Users\MADYAN\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.28.3-docker-overlay2-amd64.tar.lz4 in cache, skipping download
+I1227 13:59:10.812034   14900 cache.go:59] Finished verifying existence of preloaded tar for  v1.28.3 on docker
+I1227 13:59:10.813033   14900 profile.go:148] Saving config to C:\Users\MADYAN\.minikube\profiles\minikube\config.json ...
+I1227 13:59:13.923454   14900 image.go:83] Found docker.io/kicbase/stable:v0.0.42@sha256:d35ac07dfda971cabee05e0deca8aeac772f885a5348e1a0c0b0a36db20fcfc0 in local docker daemon, skipping pull
+I1227 13:59:13.923454   14900 cache.go:144] docker.io/kicbase/stable:v0.0.42@sha256:d35ac07dfda971cabee05e0deca8aeac772f885a5348e1a0c0b0a36db20fcfc0 exists in daemon, skipping load
+I1227 13:59:13.924649   14900 cache.go:194] Successfully downloaded all kic artifacts
+I1227 13:59:13.928529   14900 start.go:365] acquiring machines lock for minikube: {Name:mkbe9583096352f45e01bda44f97ed2326f29959 Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I1227 13:59:13.930173   14900 start.go:369] acquired machines lock for "minikube" in 0s
+I1227 13:59:13.931822   14900 start.go:96] Skipping create...Using existing machine configuration
+I1227 13:59:13.931822   14900 fix.go:54] fixHost starting: 
+I1227 13:59:13.957007   14900 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I1227 13:59:14.313915   14900 fix.go:102] recreateIfNeeded on minikube: state=Running err=<nil>
+W1227 13:59:14.314616   14900 fix.go:128] unexpected machine state, will restart: <nil>
+I1227 13:59:14.318706   14900 out.go:177] * Updating the running docker "minikube" container ...
+I1227 13:59:14.321581   14900 machine.go:88] provisioning docker machine ...
+I1227 13:59:14.322794   14900 ubuntu.go:169] provisioning hostname "minikube"
+I1227 13:59:14.331270   14900 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+I1227 13:59:14.679114   14900 main.go:141] libmachine: Using SSH client type: native
+I1227 13:59:14.684292   14900 main.go:141] libmachine: <nil>
+I1227 13:59:14.684333   14900 machine.go:91] provisioned docker machine in 362.6563ms
+I1227 13:59:14.804024   14900 ssh_runner.go:195] Run: sh -c "df -h /var | awk 'NR==2{print $5}'"
+I1227 13:59:14.813475   14900 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+I1227 13:59:15.294948   14900 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:2279 SSHKeyPath:C:\Users\MADYAN\.minikube\machines\minikube\id_rsa Username:docker}
+I1227 13:59:15.298698   14900 retry.go:31] will retry after 267.788211ms: new client: new client: Error creating new native config from ssh using: docker, &{[] [C:\Users\MADYAN\.minikube\machines\minikube\id_rsa]}: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+I1227 13:59:15.589148   14900 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+I1227 13:59:16.124486   14900 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:2279 SSHKeyPath:C:\Users\MADYAN\.minikube\machines\minikube\id_rsa Username:docker}
+I1227 13:59:16.124486   14900 retry.go:31] will retry after 469.628689ms: new client: new client: Error creating new native config from ssh using: docker, &{[] [C:\Users\MADYAN\.minikube\machines\minikube\id_rsa]}: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+I1227 13:59:16.617905   14900 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+I1227 13:59:17.081957   14900 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:2279 SSHKeyPath:C:\Users\MADYAN\.minikube\machines\minikube\id_rsa Username:docker}
+W1227 13:59:17.083193   14900 start.go:275] error running df -h /var: NewSession: new client: new client: Error creating new native config from ssh using: docker, &{[] [C:\Users\MADYAN\.minikube\machines\minikube\id_rsa]}: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+W1227 13:59:17.083243   14900 start.go:242] error getting percentage of /var that is free: NewSession: new client: new client: Error creating new native config from ssh using: docker, &{[] [C:\Users\MADYAN\.minikube\machines\minikube\id_rsa]}: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+I1227 13:59:17.096497   14900 ssh_runner.go:195] Run: sh -c "df -BG /var | awk 'NR==2{print $4}'"
+I1227 13:59:17.104730   14900 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+I1227 13:59:17.601240   14900 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:2279 SSHKeyPath:C:\Users\MADYAN\.minikube\machines\minikube\id_rsa Username:docker}
+I1227 13:59:17.601744   14900 retry.go:31] will retry after 356.872938ms: new client: new client: Error creating new native config from ssh using: docker, &{[] [C:\Users\MADYAN\.minikube\machines\minikube\id_rsa]}: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+I1227 13:59:17.970435   14900 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+I1227 13:59:18.496456   14900 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:2279 SSHKeyPath:C:\Users\MADYAN\.minikube\machines\minikube\id_rsa Username:docker}
+I1227 13:59:18.496456   14900 retry.go:31] will retry after 305.665243ms: new client: new client: Error creating new native config from ssh using: docker, &{[] [C:\Users\MADYAN\.minikube\machines\minikube\id_rsa]}: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+I1227 13:59:18.819616   14900 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+I1227 13:59:19.286542   14900 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:2279 SSHKeyPath:C:\Users\MADYAN\.minikube\machines\minikube\id_rsa Username:docker}
+W1227 13:59:19.286542   14900 start.go:290] error running df -BG /var: NewSession: new client: new client: Error creating new native config from ssh using: docker, &{[] [C:\Users\MADYAN\.minikube\machines\minikube\id_rsa]}: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+W1227 13:59:19.286542   14900 start.go:247] error getting GiB of /var that is available: NewSession: new client: new client: Error creating new native config from ssh using: docker, &{[] [C:\Users\MADYAN\.minikube\machines\minikube\id_rsa]}: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+I1227 13:59:19.287059   14900 fix.go:56] fixHost completed within 5.3552373s
+I1227 13:59:19.287059   14900 start.go:83] releasing machines lock for "minikube", held for 5.3568856s
+W1227 13:59:19.288091   14900 start.go:691] error starting host: provision: Error getting config for native Go SSH: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+W1227 13:59:19.289141   14900 out.go:239] ! StartHost failed, but will try again: provision: Error getting config for native Go SSH: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+I1227 13:59:19.289650   14900 start.go:706] Will try again in 5 seconds ...
+I1227 13:59:24.295915   14900 start.go:365] acquiring machines lock for minikube: {Name:mkbe9583096352f45e01bda44f97ed2326f29959 Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I1227 13:59:24.296884   14900 start.go:369] acquired machines lock for "minikube" in 969µs
+I1227 13:59:24.296884   14900 start.go:96] Skipping create...Using existing machine configuration
+I1227 13:59:24.296884   14900 fix.go:54] fixHost starting: 
+I1227 13:59:24.321615   14900 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I1227 13:59:26.102552   14900 cli_runner.go:217] Completed: docker container inspect minikube --format={{.State.Status}}: (1.7809368s)
+I1227 13:59:26.102552   14900 fix.go:102] recreateIfNeeded on minikube: state=Running err=<nil>
+W1227 13:59:26.102552   14900 fix.go:128] unexpected machine state, will restart: <nil>
+I1227 13:59:26.106551   14900 out.go:177] * Updating the running docker "minikube" container ...
+I1227 13:59:26.108553   14900 machine.go:88] provisioning docker machine ...
+I1227 13:59:26.108553   14900 ubuntu.go:169] provisioning hostname "minikube"
+I1227 13:59:26.122326   14900 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+I1227 13:59:27.267742   14900 cli_runner.go:217] Completed: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube: (1.1454157s)
+I1227 13:59:27.271252   14900 main.go:141] libmachine: Using SSH client type: native
+I1227 13:59:27.271252   14900 main.go:141] libmachine: <nil>
+I1227 13:59:27.271252   14900 machine.go:91] provisioned docker machine in 1.1626997s
+I1227 13:59:27.304993   14900 ssh_runner.go:195] Run: sh -c "df -h /var | awk 'NR==2{print $5}'"
+I1227 13:59:27.312993   14900 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+I1227 13:59:28.669062   14900 cli_runner.go:217] Completed: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube: (1.3560691s)
+I1227 13:59:28.669062   14900 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:2279 SSHKeyPath:C:\Users\MADYAN\.minikube\machines\minikube\id_rsa Username:docker}
+I1227 13:59:28.669062   14900 retry.go:31] will retry after 344.168413ms: new client: new client: Error creating new native config from ssh using: docker, &{[] [C:\Users\MADYAN\.minikube\machines\minikube\id_rsa]}: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+I1227 13:59:29.027093   14900 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+I1227 13:59:29.865996   14900 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:2279 SSHKeyPath:C:\Users\MADYAN\.minikube\machines\minikube\id_rsa Username:docker}
+W1227 13:59:29.865996   14900 start.go:275] error running df -h /var: NewSession: new client: new client: Error creating new native config from ssh using: docker, &{[] [C:\Users\MADYAN\.minikube\machines\minikube\id_rsa]}: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+W1227 13:59:29.865996   14900 start.go:242] error getting percentage of /var that is free: NewSession: new client: new client: Error creating new native config from ssh using: docker, &{[] [C:\Users\MADYAN\.minikube\machines\minikube\id_rsa]}: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+I1227 13:59:29.882749   14900 ssh_runner.go:195] Run: sh -c "df -BG /var | awk 'NR==2{print $4}'"
+I1227 13:59:29.893737   14900 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+I1227 13:59:31.297176   14900 cli_runner.go:217] Completed: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube: (1.4034384s)
+I1227 13:59:31.297176   14900 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:2279 SSHKeyPath:C:\Users\MADYAN\.minikube\machines\minikube\id_rsa Username:docker}
+I1227 13:59:31.297176   14900 retry.go:31] will retry after 250.633299ms: new client: new client: Error creating new native config from ssh using: docker, &{[] [C:\Users\MADYAN\.minikube\machines\minikube\id_rsa]}: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+I1227 13:59:31.572425   14900 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+I1227 13:59:32.282975   14900 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:2279 SSHKeyPath:C:\Users\MADYAN\.minikube\machines\minikube\id_rsa Username:docker}
+W1227 13:59:32.282975   14900 start.go:290] error running df -BG /var: NewSession: new client: new client: Error creating new native config from ssh using: docker, &{[] [C:\Users\MADYAN\.minikube\machines\minikube\id_rsa]}: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+W1227 13:59:32.282975   14900 start.go:247] error getting GiB of /var that is available: NewSession: new client: new client: Error creating new native config from ssh using: docker, &{[] [C:\Users\MADYAN\.minikube\machines\minikube\id_rsa]}: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+I1227 13:59:32.282975   14900 fix.go:56] fixHost completed within 7.9860911s
+I1227 13:59:32.282975   14900 start.go:83] releasing machines lock for "minikube", held for 7.9860911s
+W1227 13:59:32.284037   14900 out.go:239] * Failed to start docker container. Running "minikube delete" may fix it: provision: Error getting config for native Go SSH: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+I1227 13:59:32.291833   14900 out.go:177] 
+W1227 13:59:32.292877   14900 out.go:239] X Exiting due to GUEST_PROVISION: error provisioning guest: Failed to start host: provision: Error getting config for native Go SSH: open C:\Users\MADYAN\.minikube\machines\minikube\id_rsa: Access is denied.
+W1227 13:59:32.292877   14900 out.go:239] * 
+W1227 13:59:32.300482   14900 out.go:239] ╭─────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                             │
+│    * If the above advice does not help, please let us know:                                 │
+│      https://github.com/kubernetes/minikube/issues/new/choose                               │
+│                                                                                             │
+│    * Please run `minikube logs --file=logs.txt` and attach logs.txt to the GitHub issue.    │
+│                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────╯
+I1227 13:59:32.305214   14900 out.go:177] 
+
+* 
+* ==> Docker <==
+* 
+* ==> container status <==
+* 
+* ==> describe nodes <==
+* 
+* ==> dmesg <==
+* 
+* ==> kernel <==
+* 
+* ==> kubelet <==
